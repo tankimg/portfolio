@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="experience">
+      <canvas class="experience-canvas">
+      <script type="module" src="/main.js"></script>
+      </canvas>
+    </div>
 
+    <div class="page no_selection" asscroll-container>
+      <div class="page-wrapper" asscroll>
+
+        <section class="hero">
+
+          <!--  Persisting Social Media Buttons -->
+          <div class="socials-wrapper">
+            <div class="socials" data-speed="0">
+
+              <div class="socials-margin"></div>
+
+              <a class="btn btn-outline-light btn-social mx-1" data-toggle="tooltip" data-placement="top" title="" onclick= " window.open('https://www.linkedin.com/in/tangui-marchand-guerniou-69b725198/','_blank')" data-bs-original-title="LinkedIn" aria-label="LinkedIn">
+                <svg class="svg-inline--fa fa-linkedin-in fa-w-14 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                  <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+  
+                  </path>
+                </svg><!-- <i class="fab fa-fw fa-linkedin-in"></i> Font Awesome fontawesome.com -->
+              </a>
+              
+              <div class="socials-margin"></div>
+  
+              <a class="btn btn-outline-light btn-social mx-1" data-toggle="tooltip" data-placement="top" title="" onclick = " window.open('https://github.com/tankimg','_blank')" data-bs-original-title="GitHub" aria-label="GitHub">
+                <svg class="svg-inline--fa fa-github fa-w-16 fa-fw" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+  
+                </path>
+              </svg><!-- <i class="fab fa-fw fa-github"></i> Font Awesome fontawesome.com -->
+              </a>
+
+              <div class="socials-margin"></div>
+              
+              <a class="btn btn-outline-light btn-social mx-1" data-toggle="tooltip" data-placement="top" title="" onclick = " window.open('mailto: tangui.marchandguerniou@gmail.com')" data-bs-original-title="Mail" aria-label="Mail">
+                <svg class="svg-inline--fa fa-envelope fa-w-16" aria-hidden="true" focusable="false" data-prefix="fa" data-icon="envelope" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                  <path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+  
+                  </path>
+                </svg><!-- <i class="fa fa-envelope"></i> Font Awesome fontawesome.com -->
+              </a>
+            </div>
+          </div>
+
+          <!--  Opening Section -->
+          <div class="hero-wrapper">
+            <div class="hero-main">
+              <h1 class="hero-main-title">Tangui Marchand-Guerniou</h1>
+              <p class="hero-main-description">Unity | VR Engineer</p>
+            </div>
+            <div class="hero-second">
+              <h1 class="hero-second-title">Portfolio</h1>
+            </div>
+            <div class="peaches">
+              <div class="peach" data-speed="1">🎹</div>
+              <div class="peach" data-speed="-100">⏬ to start ⏬</div>
+              <div class="peach" data-speed="1.2">🎮</div>
+              <div class="peach" data-speed="1.7">⌨️</div>
+              <div class="peach" data-speed="2">🎤</div>
+              <div class="peach" data-speed="4">🏐</div>
+              <div class="peach" data-speed="2.5">⚾️</div>
+            </div>
+            </div>
+        </section>
+
+        
+        <div class="section-margin"></div>
+
+        <!-- Section about me -->
+        <div class="section left wider">
+
+          <div class="content-margin"></div>
+
+          <h1 class="section-title">A propos de moi</h1>
+
+          <div class="subsection">
+
+            <h1 class="subsection-title">Formation</h1>
+
+            <hr class="rounded">
+
+            <div class="expitem">
+              <h2 class="expitem-title">INSA Rennes</h2>
+              <p class="expitem-subtitle">Diplôme d'ingénieur en informatique</p>
+
+              <p class="expitem-description">Spécialité dans les médias et l'interaction</p>
+
+              <b class="expitem-year">2017 - 2022</b>
+            </div>
+
+            <div class="expitem">
+              <h2 class="expitem-title">ISTIC Rennes</h2>
+              <p class="expitem-subtitle">Master recherche en informatique</p>
+
+              <p class="expitem-description">Master 2 en double diplôme portant sur un éventail de sujets de la recherche en informatique</p>
+
+              <b class="expitem-year">2021 - 2022</b>
+            </div>
+            
+          </div>
+
+
+          <div class="subsection">
+            
+            <h1 class="subsection-title">Expériences</h1>
+
+            <hr class="rounded">
+
+            <div class="expitem">
+              <h2 class="expitem-title">Stagiaire en développement</h2>
+
+              <p class="expitem-subtitle">IRISA</p>
+
+              <p class="expitem-description">Développement d'un outil d'annotation pour des chercheurs en archéologie. Portage d'une application archéologique éducative en réalité virtuelle pour le musée des beaux arts de rennes</p>
+
+              <b class="expitem-year">Juin 2021 - Aout 2021</b>
+            </div>
+
+            <div class="expitem">
+              <h2 class="expitem-title">Stagiaire en développement</h2>
+
+              <p class="expitem-subtitle">Orange Innovation</p>
+              <p class="expitem-description">Conception & développement d'un système innovant d'animation procédurale des mains pour la réalité virtuelle. Il fait actuellement l'objet d'une demande de brevet et a conduit à la publication d'un poster à IEEE VR 2023</p>
+
+              <b class="expitem-year">Fev 2022 - Aout 2022</b>
+            </div>
+
+            <div class="expitem">
+              <h2 class="expitem-title">Ingénieur de Recherche</h2>
+              <p class="expitem-subtitle">INRIA - Nemo.ai Lab</p>
+              <p class="expitem-description">Ingénieur chargé de l'intégration au sein de Nemo.ai, un laboratoire commun entre l'INRIA et InterDigital se centrant sur le sujet de l'avatar et la représentation virtuelle de humains. Conception & développement de plateformes intégrant l'ensemble des travaux de recherche du projet avatar ainsi qu'un ensemble de démos et prototypes pour accompagner et mettre en valeur ces différents travaux</p>
+
+              <b class="expitem-year">Oct 2022 - Aujourd'hui</b>
+            </div>
+          </div>
+          
+          <div class="content-margin"></div>
+          
+        </div>
+
+        <div class="section-margin"></div>
+
+        <div class="section left wider">
+
+          <div class="content-margin"></div>
+
+          <div class="section-title">Skills</div>
+
+          <div class="content-margin"></div>
+        </div>
+        
+
+        <div class="first-move section-margin"></div>
+
+        <div class="project-content-wrapper">
+
+          <div class="project-content-section section right">
+            <div class="content-margin"></div>
+            <section id="thruston-HTLM-Content">
+              <div class="section-title">Thurston's UniVR</div>
+              
+              <div class="subsection">
+                <div class="subsection-title">Géométries de Thurston en réalité virtuelle</div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.            
+              </div>
+
+              <div class="content-margin"></div>
+
+              <div class="details-wrapper second-move">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+    
+                Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus.            
+              </div>
+            </section>
+
+            <section id="jeuDePaume-HTLM-Content">
+              <div class="titre-section">Jeu de paume en VR</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+    
+                Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.            
+              </div>
+            </section>
+
+            <section id="pacmax-HTLM-Content">
+              <div class="titre-section">PAC-MAX</div>
+              <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+    
+                Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+                Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.            
+              </div>
+            </section>
+            <div class="content-margin"></div>
+          </div>
+
+          <!-- Project Videos -->
+          <div class="project-media-section section left extra-wide">
+            <div id="thruston-HTLM-Media" class="project-media-wrapper">
+              <iframe width="530" height="336" src="https://www.youtube.com/embed/Dy7whqRtPfA" title="Thurston&#39;s UniVR - SHOWROOM DEMO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="jeuDePaume-HTLM-Media" class="project-media-wrapper">
+              <iframe  width="530" height="336" src="https://www.youtube.com/embed/q1Z2cdt7swY" title="Jeu de Paume en VR - PROTOTYPE VIDEO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="pacmax-HTLM-Media" class="project-media-wrapper">
+              <iframe width="530" height="336" src="https://www.youtube.com/embed/m9OeVEiXUBI" title="PACMAX - DEMO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="project-background"></div>
+        </div>
+
+        <div class="footer gsap-marker-end">
+
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
