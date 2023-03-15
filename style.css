@@ -63,6 +63,10 @@ html, body{
   -ms-user-select: none; /* IE10+ */
 }
 
+.footer{
+  background-color:var(--color-background-light);
+}
+
 /* Hero section -------------------------------- */
 
 .hero{
@@ -166,18 +170,18 @@ html, body{
 
 .left{
   margin-right: auto;
-  padding-left: 5%;
-  padding-right: 10%;
-  border-top-right-radius: 700px 700px;
-  border-bottom-right-radius: 700px 700px;
+  padding-left: calc(max(40px, 5%));
+  padding-right: calc(min(40px, 5%));
+  border-top-right-radius: 300px 300px;
+  border-bottom-right-radius: 70px 70px;
 }
 
 .right{
   margin-left: auto;
-  padding-left: 10%;
+  padding-left: calc(min(70px, 5%));
   padding-right: 5%;
-  border-top-left-radius: 700px 700px;
-  border-bottom-left-radius: 700px 700px;
+  border-top-left-radius: 300px 300px;
+  border-bottom-left-radius: 70px 70px;
 }
 
 /* Project Section ----------------------------- */
@@ -187,15 +191,21 @@ html, body{
   width: 100vw;
 }
 
+#pacmax-HTLM-Media{
+  display: none;
+}
+
 .project-content-section{
-  position: relative;
+  position: absolute;
   background-color:var(--color-background-light);
   max-width: 550px;
+  top:-675px;
+  right:0px;
 }
 
 .project-media-section{
   position: absolute;
-  top : 700px;
+  top : 50px;
   background-color:var(--color-background-light);
   border-top-right-radius: 70px 70px !important;
   border-bottom-right-radius: 70px 70px !important;
@@ -218,17 +228,16 @@ html, body{
 }
 
 .project-background{
-  position:absolute;
+  position:relative;
   z-index: 99;
-  top: 675px;
   background-color:var(--color-pink-light);
   width: 100%;
-  height: calc(100% - 675px) !important;
+  height: 700px !important;
   z-index: -1;
 }
 
 .content-margin{
-  height: 200px;
+  height: 100px;
   width: 100%;
 }
 
@@ -237,9 +246,9 @@ html, body{
 .socials-wrapper{
   position: absolute;
   height: 100%;
-  width: 5%;
-  left: 1%;
-  margin: 0 auto;
+  width: 3.25vw;
+  left: calc(max(0.70vw,5px));
+  margin: 0;
   z-index: 101;
 }
 
@@ -294,16 +303,16 @@ html, body{
 .btn-social {
   border-radius: 100%;
   display: inline-flex;
-  width: 3.25rem;
-  height: 3.25rem;
-  font-size: 1.25rem;
+  width: calc(max(3.25vw, 30px));
+  aspect-ratio: 1;
+  font-size: calc(max(1.25vw, 10px));
   justify-content: center;
   align-items: center;
   border-color: var(--color-text-light);
 }
 .mx-1 {
-  margin-right: 0.25rem !important;
-  margin-left: 0.25rem !important;
+  margin-right: 0.25vw !important;
+  margin-left: 0.25vw !important;
 }
 
 /* Floating Emojis */

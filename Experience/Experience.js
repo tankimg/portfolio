@@ -11,6 +11,7 @@ import Renderer from "./Renderer";
 import World from "./World/World";
 import Input from "./Utils/Input";
 
+
 export default class Experience{
     static instance;
     constructor(canvas){
@@ -19,31 +20,47 @@ export default class Experience{
             return Experience.instance;
         }
         Experience.instance = this;
-        this.canvas = canvas;
-        this.scene = new THREE.Scene();
-        this.time = new Time();
+
         this.sizes = new Sizes();
-        this.input = new Input();
-        this.camera = new Camera();
-        this.renderer = new Renderer();
-        this.ressources = new Ressources(assets);
 
-        this.world = new World();
+        if(this.sizes.width < 800){
+            //MOBILE MODE
+            this.mobileMode = true;
+        }else{
+            
+            this.mobileMode = false;
 
-        this.time.on("update", () => this.update());
+            this.canvas = canvas;
+            this.scene = new THREE.Scene();
+            this.time = new Time();
+            
+            this.input = new Input();
+            this.camera = new Camera();
+            this.renderer = new Renderer();
+            this.ressources = new Ressources(assets);
 
-        this.sizes.on("resize", () => this.resize());
+            this.world = new World();
+
+            this.time.on("update", () => this.update());
+
+            this.sizes.on("resize", () => this.resize());
+        }
     }
 
     resize(){
-        this.camera.resize();
-        this.renderer.resize();
+        this.mobileMode = this.sizes.width < 800;
+        if(!this.mobileMode){
+            this.camera.resize();
+            this.renderer.resize();
+        }
     }
 
     update(){
-        this.camera.update();
-        this.renderer.update();
-        this.world.update();
+        if(!this.mobileMode){
+            this.camera.update();
+            this.renderer.update();
+            this.world.update();
+        }
     }
 
     

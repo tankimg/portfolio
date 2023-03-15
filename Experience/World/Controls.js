@@ -25,15 +25,14 @@ export default class Controls{
     }
 
     setPath(){
-        if(this.experience.sizes.width < 600){
+        if(this.experience.sizes.width < 1200){
             GSAP.to(this.camera.position, {
-                y: 0,
-                z: 28,
-                x: -5,
+                y: -1,
+                z: 18,
+                x: 3,
                 duration : 2,
                 scrollTrigger:{
                     trigger: ".first-move",
-                    markers: true,
                     toggleActions: "play pause pause reverse",
                     start: "top top",
                     end: "80% top",
@@ -42,11 +41,10 @@ export default class Controls{
             });
 
             GSAP.to(this.camera.rotation, {
-                y: Math.PI/4,
-                duration : 10,
+                y: 0,
+                duration : 2,
                 scrollTrigger:{
-                    trigger: ".second-move",
-                    //markers: true,
+                    trigger: ".first-move",
                     toggleActions: "play pause pause reverse",
                     start: "top top",
                     end: "80% top",
@@ -61,7 +59,6 @@ export default class Controls{
                 duration : 2,
                 scrollTrigger:{
                     trigger: ".first-move",
-                    //markers: true,
                     toggleActions: "play pause pause reverse",
                     start: "top top",
                     end: "80% top",

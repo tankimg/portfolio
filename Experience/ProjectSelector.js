@@ -40,12 +40,15 @@ export default class ProjectSelector{
         const tp = new Project("thruston","thruston-HTLM-Content", "thruston-HTLM-Media", this.mimi, undefined, new THREE.Vector3(1.5, -0.3, 0), new THREE.Vector3(1, 1, 1.2));
         const jdpp = new Project("jeuDePaume","jeuDePaume-HTLM-Content", "jeuDePaume-HTLM-Media", this.racket, this.ball, new THREE.Vector3(1.5, -0.3, 0), new THREE.Vector3(1, 1, 1.2));
         const pacp = new Project("pacmax","pacmax-HTLM-Content", "pacmax-HTLM-Media", this.pacmax, this.pacGum, new THREE.Vector3(1.5, 0.3, 0), new THREE.Vector3(2.2, 0.3, 1.2));
+        const losp = new Project("LastOneStanding","los-HTML-Content","los-HTML-Media", undefined, undefined, new THREE.Vector3(1.5, -0.3, 0), new THREE.Vector3(1, 1, 1.2));
 
         tp.setActive(false);
         jdpp.setActive(false);
         pacp.setActive(false);
+        losp.setActive(false);
 
         this.projects.push(tp);
+        this.projects.push(losp);
         this.projects.push(jdpp);
         this.projects.push(pacp);
     }
