@@ -43,5 +43,10 @@ export default [
         name : "portrait",
         type : "gltfModel",
         path : "../assets/portrait.glb"
+    },
+    {
+        name : "robot",
+        type : "gltfModel",
+        path : "../assets/robot.glb"
     }
 ]

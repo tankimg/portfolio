@@ -65,6 +65,11 @@ html, body{
 
 .footer{
   background-color:var(--color-background-light);
+  padding: 2% 2% 2% 2%;
+}
+
+.footerSocials-margin{
+  width: calc(max(100%,400px));
 }
 
 /* Hero section -------------------------------- */
@@ -191,14 +196,11 @@ html, body{
   width: 100vw;
 }
 
-#pacmax-HTLM-Media{
-  display: none;
-}
-
 .project-content-section{
   position: absolute;
   background-color:var(--color-background-light);
   max-width: 550px;
+  min-height: 750px;
   top:-675px;
   right:0px;
 }
@@ -232,13 +234,36 @@ html, body{
   z-index: 99;
   background-color:var(--color-pink-light);
   width: 100%;
-  height: 700px !important;
+  height: calc(max(60vw,700px)) !important;
   z-index: -1;
 }
 
 .content-margin{
   height: 100px;
   width: 100%;
+}
+
+/* Photo gallery (LOS)*/
+
+.row{
+  display: flex;
+}
+
+div.gallery {
+  margin: 5px;
+  width: 50%;
+}
+
+div.gallery:hover {
+  opacity: .5;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 /* SOCIALS */
