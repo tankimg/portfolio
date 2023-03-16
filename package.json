@@ -15,8 +15,10 @@
     "vite": "^4.1.0"
   },
   "dependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
     "events": "^3.3.0",
     "gh-pages": "^5.0.0",
-    "three": "^0.150.1"
+    "three": "^0.150.1",
+    "vue": "^3.2.47"
   }
 }
