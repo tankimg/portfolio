@@ -22,6 +22,10 @@ html, body{
   height: 100%;
 }
 
+.preload {
+  background-color:#DDDCDA;
+}
+
 /* The Actual Page */
 
 :root{
@@ -338,6 +342,10 @@ div.gallery img {
 .mx-1 {
   margin-right: 0.25vw !important;
   margin-left: 0.25vw !important;
+}
+
+.trad{
+  height: 1.5em !important;
 }
 
 /* Floating Emojis */

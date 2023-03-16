@@ -30,9 +30,17 @@ export default class World{
             
             this.controls = new Controls();
             this.portrait = new Portrait();
+
+            this.removePreloadMask();
+
             this.ready = true;
         }
         );
+    }
+
+    removePreloadMask(){
+        var element = document.getElementById("pagewrapper");
+        element.classList.remove("preload");
     }
 
     resize(){
