@@ -91,9 +91,12 @@ html, body{
 }
 
 .hero-main{
+  background-color:var(--color-background-light);
   position : absolute;
   top : 45px;
   left: 40px;
+  padding: 1%;
+  border-radius: 10px;
 }
 
 .hero-main-title{
