@@ -21,6 +21,10 @@ export default class Experience{
         }
         Experience.instance = this;
 
+        this.language = "en";
+        this.frElements;
+        this.enElements;
+
         this.sizes = new Sizes();
 
         this.canvas = canvas;
@@ -48,6 +52,8 @@ export default class Experience{
             this.mobileMode = false;
             this.goDefault();
         }
+
+        this.switchLanguage();
     }
 
     resize(){
@@ -71,5 +77,33 @@ export default class Experience{
     
     loadCSS(filename){
         document.getElementById("cssimport").setAttribute("href", filename);
+    }
+
+    switchLanguage(){
+
+        if(!this.frElements) this.frElements = document.getElementsByClassName("fr");
+        if(!this.enElements) this.enElements = document.getElementsByClassName("en");
+        if(this.language == "fr") 
+        {
+            console.log("language switched to en")
+            this.language = "en";
+            for(var i = 0; i < this.frElements.length; i++){
+                this.frElements[i].classList.add("hidden");
+            }
+            for(var i = 0; i < this.enElements.length; i++){
+                this.enElements[i].classList.remove("hidden");
+            }
+        }else{
+            console.log("language switched to fr")
+            this.language = "fr";
+    
+            for(var i = 0; i < this.enElements.length; i++){
+                this.enElements[i].classList.add("hidden");
+            }
+    
+            for(var i = 0; i < this.frElements.length; i++){
+                this.frElements[i].classList.remove("hidden");
+            }
+        }
     }
 }
