@@ -24,11 +24,15 @@ export default class World{
         this.ressources.on("ready", () => {
             this.environnement = new Environnement();
             this.room = new Room();
-            this.levitator = new Levitator();
-            this.projectSelector = new ProjectSelector();
-            this.buttons = new Buttons();
             
-            this.controls = new Controls();
+            this.levitator = new Levitator();
+                
+            if(this.experience.mobileMode == false){
+                this.controls = new Controls();
+                this.projectSelector = new ProjectSelector();
+                this.buttons = new Buttons();
+            }
+
             this.portrait = new Portrait();
 
             this.removePreloadMask();
@@ -50,8 +54,10 @@ export default class World{
     update(){
         if(this.ready){
             this.levitator.update();
-            this.buttons.update();
             this.portrait.update();
+            if(!this.experience.mobileMode){
+                this.buttons.update();
+            }
         }
         if(this.controls){
             this.controls.update();

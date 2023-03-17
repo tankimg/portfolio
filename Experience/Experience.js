@@ -23,45 +23,53 @@ export default class Experience{
 
         this.sizes = new Sizes();
 
+        this.canvas = canvas;
+        this.scene = new THREE.Scene();
+        this.time = new Time();
+        
+        this.input = new Input();
+        this.camera = new Camera();
+        this.renderer = new Renderer();
+        this.ressources = new Ressources(assets);
+
+        this.world = new World();
+
+        this.time.on("update", () => this.update());
+
+        this.sizes.on("resize", () => this.resize());
+
         if(this.sizes.width < 800){
             //MOBILE MODE
             this.mobileMode = true;
+            this.goMobile();
+
         }else{
-            
+            //MOBILE MODE
             this.mobileMode = false;
-
-            this.canvas = canvas;
-            this.scene = new THREE.Scene();
-            this.time = new Time();
-            
-            this.input = new Input();
-            this.camera = new Camera();
-            this.renderer = new Renderer();
-            this.ressources = new Ressources(assets);
-
-            this.world = new World();
-
-            this.time.on("update", () => this.update());
-
-            this.sizes.on("resize", () => this.resize());
+            this.goDefault();
         }
     }
 
     resize(){
-        this.mobileMode = this.sizes.width < 800;
-        if(!this.mobileMode){
-            this.camera.resize();
-            this.renderer.resize();
-        }
+        this.camera.resize();
+        this.renderer.resize();
     }
 
     update(){
-        if(!this.mobileMode){
-            this.camera.update();
+        this.camera.update();
             this.renderer.update();
             this.world.update();
-        }
     }
 
+    goMobile(){
+        this.loadCSS("mobileStyle.css");
+    }
     
+    goDefault(){
+        this.loadCSS("style.css");
+    }
+    
+    loadCSS(filename){
+        document.getElementById("cssimport").setAttribute("href", filename);
+    }
 }

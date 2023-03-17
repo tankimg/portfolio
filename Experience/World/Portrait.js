@@ -8,6 +8,7 @@ export default class Portrait{
 
         this.portrait = this.ressources.items.portrait.scene.clone();
         this.portraitStartingPos = new THREE.Vector3(4.15,6.1,0);
+        if(this.experience.mobileMode == true) this.portraitStartingPos = new THREE.Vector3(3.15,5.5,0);
         this.portraitStartRotation = new THREE.Vector3(0,-Math.PI / 9,0);
 
         this.robot = this.ressources.items.robot.scene.clone();

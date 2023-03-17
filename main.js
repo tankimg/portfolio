@@ -1,4 +1,3 @@
-import './style.css';
 import Experience from './Experience/Experience'
 
 const experience = new Experience(document.querySelector(".experience-canvas"));
@@ -7,12 +6,14 @@ var frElements;
 var enElements;
 
 var el = document.getElementById("language");
-if (el.addEventListener)
+if (el.addEventListener){
     el.addEventListener("click", switchLanguage, false);
-else if (el.attachEvent)
+}
+else if (el.attachEvent){
     el.attachEvent('onclick', switchLanguage);
+}
 
-    switchLanguage();
+switchLanguage();
 
 function switchLanguage(){
 
@@ -37,10 +38,10 @@ function switchLanguage(){
         }
 
         for(var i = 0; i < frElements.length; i++){
-            console.log("before : " + frElements[i].classList)
             frElements[i].classList.remove("hidden");
-            console.log("after : " + frElements[i].classList)
         }
     }
 }
+
+
 
