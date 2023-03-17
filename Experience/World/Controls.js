@@ -144,8 +144,7 @@ export default class Controls{
     }
 
     update(){
-        
-        
+
     }
 
 }

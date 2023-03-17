@@ -351,57 +351,10 @@ div.gallery img {
   height: 1.5em !important;
 }
 
-/* Floating Emojis */
+/* LANGUAGES */
 
-.peaches {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 101;
-  pointer-events: none;
-}
-.peach {
-  position: absolute;
-  font-size: 3vw;
-}
-
-.peaches .peach:nth-child(1) {
-  top: 35%;
-  left: 5%;
-  transform: scale(0.3 * 2);
-}
-.peaches .peach:nth-child(2) {
-  top: 85%;
-  display: flex;
-  align-self: center;
-  transform: scale(0.1 * 2);
-}
-.peaches .peach:nth-child(3) {
-  top: 10%;
-  right: 57%;
-  transform: scale(0.35 * 2);
-}
-.peaches .peach:nth-child(4) {
-  top: 35%;
-  left: 35%;
-  transform: scale(0.4 * 2);
-}
-.peaches .peach:nth-child(5) {
-  top: 20%;
-  left: 20%;
-  transform: scale(0.2 * 2);
-}
-.peaches .peach:nth-child(6) {
-  top: 50%;
-  left: 25%;
-  transform: scale(0.3 * 2);
-}
-.peaches .peach:nth-child(7) {
-  top: 45%;
-  right: 10%;
-  transform: scale(0.45 * 2);
+.hidden{
+  display: none;
 }
 
 
