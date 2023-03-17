@@ -12,6 +12,7 @@ else if (el.attachEvent){
 }
 
 function switchLanguage(){
+    console.log("test")
     experience.switchLanguage();
 }
 

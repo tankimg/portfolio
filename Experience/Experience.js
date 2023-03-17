@@ -76,7 +76,9 @@ export default class Experience{
     }
     
     loadCSS(filename){
-        document.getElementById("cssimport").setAttribute("href", filename);
+        var links = document.getElementsByTagName("link");
+        console.log(links);
+        links[1].setAttribute("href", filename);
     }
 
     switchLanguage(){
