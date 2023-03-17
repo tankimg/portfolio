@@ -68,17 +68,19 @@ export default class Experience{
     }
 
     goMobile(){
-        this.loadCSS("mobileStyle.css");
+        var all = document.getElementsByTagName("*");
+
+        for (var i=0, max=all.length; i < max; i++) {
+            all[i].classList.add("mobile");
+        }
     }
     
     goDefault(){
-        this.loadCSS("style.css");
-    }
-    
-    loadCSS(filename){
-        var links = document.getElementsByTagName("link");
-        console.log(links);
-        links[1].setAttribute("href", filename);
+        var all = document.getElementsByTagName("*");
+
+        for (var i=0, max=all.length; i < max; i++) {
+            all[i].classList.remove("mobile");
+        }
     }
 
     switchLanguage(){
@@ -87,7 +89,7 @@ export default class Experience{
         if(!this.enElements) this.enElements = document.getElementsByClassName("en");
         if(this.language == "fr") 
         {
-            console.log("language switched to en")
+            //console.log("language switched to en")
             this.language = "en";
             for(var i = 0; i < this.frElements.length; i++){
                 this.frElements[i].classList.add("hidden");
@@ -96,7 +98,7 @@ export default class Experience{
                 this.enElements[i].classList.remove("hidden");
             }
         }else{
-            console.log("language switched to fr")
+            //console.log("language switched to fr")
             this.language = "fr";
     
             for(var i = 0; i < this.enElements.length; i++){
